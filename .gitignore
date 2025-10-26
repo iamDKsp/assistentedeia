@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.whatsapp-session/
+qr_code.png
+logs/
