@@ -1,0 +1,19 @@
+# Exemplo de configuração para o robô do WhatsApp Web
+session_dir: .whatsapp-session
+qr_output: qr_code.png
+conversation_log: logs/conversations.log
+implicit_wait: 2
+headless: false
+reply:
+  # Mensagem genérica utilizada quando nenhuma palavra-chave é encontrada.
+  default: "Olá! Sou o assistente virtual. Como posso ajudar?"
+  # Respostas baseadas em palavras-chave frequentes.
+  faq:
+    horário: "Nosso horário de atendimento é de segunda a sexta das 9h às 18h."
+    pagamento: "Aceitamos cartão, pix e boleto."
+  # Respostas para comandos pré-definidos.
+  commands:
+    "/ajuda": "Comandos disponíveis: /ajuda, /status, /faq"
+    "/status": "Todos os sistemas estão operando normalmente."
+  # Intervalo (segundos) usado para simular digitação humana.
+  delay: [1, 3]
